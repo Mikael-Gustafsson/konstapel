@@ -1,5 +1,14 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import allQuestions from './questions.json';
+
+function shuffleArray(array) {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
 
 function App() {
   const [selectedChapter, setSelectedChapter] = useState(null);
@@ -10,7 +19,6 @@ function App() {
   const [score, setScore] = useState(0);
   const [quizFinished, setQuizFinished] = useState(false);
 
-  // Samla unika kapitel (ex. "1", "2", "3") från id
   const chapters = Array.from(new Set(allQuestions.map((q) => q.id.split('.')[0])));
 
   const startQuiz = (chapter) => {
@@ -55,6 +63,10 @@ function App() {
 
   const currentQuestion = filteredQuestions[currentIndex];
 
+  const shuffledOptions = useMemo(() => {
+    return currentQuestion ? shuffleArray(currentQuestion.options) : [];
+  }, [currentQuestion]);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100 flex items-center justify-center p-4">
       <div className="bg-white p-6 rounded-xl shadow-xl w-full max-w-xl text-gray-800">
@@ -96,7 +108,7 @@ function App() {
           <>
             <h2 className="text-2xl font-semibold mb-6">{currentQuestion.question}</h2>
             <div className="space-y-4">
-              {currentQuestion.options.map((option) => (
+              {shuffledOptions.map((option) => (
                 <button
                   key={option}
                   onClick={() => handleOptionClick(option)}
