@@ -1,0 +1,390 @@
+[
+  {
+    "id": "1.1",
+    "question": "Vad kallas rättsområdet som reglerar förhållandet mellan enskilda rättssubjekt?",
+    "options": [
+      "Civilrätt",
+      "Straffrätt",
+      "Förvaltningsrätt"
+    ],
+    "answer": "Civilrätt"
+  },
+  {
+    "id": "1.2",
+    "question": "Vad står NJA för?",
+    "options": [
+      "Nytt Juridiskt Arkiv",
+      "Nordisk Juridisk Almanacka",
+      "Nationell Juridisk Ansamling"
+    ],
+    "answer": "Nytt Juridiskt Arkiv"
+  },
+  {
+    "id": "1.3",
+    "question": "Vilken princip avspeglas i RF 8:18 1 st.?",
+    "options": [
+      "Legalitetsprincipen",
+      "Den formella lagkraftens princip",
+      "Proportionalitetsprincipen"
+    ],
+    "answer": "Den formella lagkraftens princip"
+  },
+  {
+    "id": "1.4",
+    "question": "Vilket organ får besluta om lagar?",
+    "options": [
+      "Regeringen",
+      "Riksdagen",
+      "Högsta domstolen"
+    ],
+    "answer": "Riksdagen"
+  },
+  {
+    "id": "1.5",
+    "question": "Vad heter författningssamlingen i vilken Polismyndighetens föreskrifter ingår?",
+    "options": [
+      "SFS",
+      "PMFS",
+      "SOSFS"
+    ],
+    "answer": "PMFS"
+  },
+  {
+    "id": "1.6",
+    "question": "Vad är skillnaden mellan föreskrifter och allmänna råd?",
+    "options": [
+      "Föreskrifter är bindande, allmänna råd är vägledande",
+      "Inga skillnader",
+      "Allmänna råd är mer bindande än föreskrifter"
+    ],
+    "answer": "Föreskrifter är bindande, allmänna råd är vägledande"
+  },
+  {
+    "id": "1.7",
+    "question": "Vilka förarbeten har störst praktisk betydelse för att tolka gällande rätt?",
+    "options": [
+      "Propositioner",
+      "Utredningar",
+      "Debattinlägg"
+    ],
+    "answer": "Propositioner"
+  },
+  {
+    "id": "1.8",
+    "question": "Vad står SOU för?",
+    "options": [
+      "Statens offentliga utredningar",
+      "Svenska offentliga utlåtanden",
+      "Statlig offentlig uppföljning"
+    ],
+    "answer": "Statens offentliga utredningar"
+  },
+  {
+    "id": "1.9",
+    "question": "Vad står Ds för?",
+    "options": [
+      "Departementsserien",
+      "Dokumentserie",
+      "Domstolsstatistik"
+    ],
+    "answer": "Departementsserien"
+  },
+  {
+    "id": "1.10",
+    "question": "Vad står SFS för?",
+    "options": [
+      "Svensk författningssamling",
+      "Statens förordningssamling",
+      "Sveriges författarserie"
+    ],
+    "answer": "Svensk författningssamling"
+  },
+  {
+    "id": "1.11",
+    "question": "Vilken princip avspeglar det som står i RF 1 kap 1 § 3 st?",
+    "options": [
+      "Legalitetsprincipen",
+      "Proportionalitetsprincipen",
+      "Maktdelningsprincipen"
+    ],
+    "answer": "Legalitetsprincipen"
+  },
+  {
+    "id": "1.12",
+    "question": "Förklara skillnaden mellan dispositiv och indispositiv rätt.",
+    "options": [
+      "Dispositiv = kan avtalas bort, Indispositiv = kan inte avtalas bort",
+      "Dispositiv = statligt beslutad, Indispositiv = kommunalt beslutad",
+      "Dispositiv = individuell, Indispositiv = kollektiv"
+    ],
+    "answer": "Dispositiv = kan avtalas bort, Indispositiv = kan inte avtalas bort"
+  },
+  {
+    "id": "1.13",
+    "question": "Vilken metod användes för att införliva EKMR i svensk rätt?",
+    "options": [
+      "Inkorporering",
+      "Transformering",
+      "Ratificering"
+    ],
+    "answer": "Inkorporering"
+  },
+  {
+    "id": "1.14",
+    "question": "Vad är JO:s betydelse för den polisiära verksamheten?",
+    "options": [
+      "Utövar tillsyn över polisens arbete och kan väcka åtal för tjänstefel",
+      "Skapar nya lagar för polisen",
+      "Utses av Polismyndigheten"
+    ],
+    "answer": "Utövar tillsyn över polisens arbete och kan väcka åtal för tjänstefel"
+  },
+  {
+    "id": "1.15",
+    "question": "Vilket organ beslutar om förordningar?",
+    "options": [
+      "Regeringen",
+      "Riksdagen",
+      "Domstolarna"
+    ],
+    "answer": "Regeringen"
+  },
+  {
+    "id": "2.1",
+    "question": "Vad är förvaltningslagens huvudfunktion?",
+    "options": [
+      "Att skapa en rättssäker handläggning",
+      "Att bestämma skattesatser",
+      "Att reglera brottmål"
+    ],
+    "answer": "Att skapa en rättssäker handläggning"
+  },
+  {
+    "id": "2.3",
+    "question": "Vilken är instansordningen för överklagande av förvaltningsbeslut?",
+    "options": [
+      "Tingsrätt → Hovrätt → Högsta domstolen",
+      "Förvaltningsrätt → Kammarrätt → Högsta förvaltningsdomstolen",
+      "Polismyndighet → Regering → Europadomstol"
+    ],
+    "answer": "Förvaltningsrätt → Kammarrätt → Högsta förvaltningsdomstolen"
+  },
+  {
+    "id": "2.4",
+    "question": "I vilken grundlag och paragraf finns objektivitetsprincipen?",
+    "options": [
+      "Regeringsformen 1 kap 9 §",
+      "Tryckfrihetsförordningen 2 kap 1 §",
+      "Yttrandefrihetsgrundlagen 1 kap 1 §"
+    ],
+    "answer": "Regeringsformen 1 kap 9 §"
+  },
+  {
+    "id": "2.10",
+    "question": "Vad kallas principen enligt vilken myndigheter måste lämna ut allmänna handlingar vid begäran?",
+    "options": [
+      "Offentlighetsprincipen",
+      "Likabehandlingsprincipen",
+      "Officialprincipen"
+    ],
+    "answer": "Offentlighetsprincipen"
+  },
+  {
+    "id": "2.14",
+    "question": "Vilket av följande påståenden är felaktigt?",
+    "options": [
+      "Objektivitetsprincipen blir oviktig i brottsutredningar.",
+      "Objektivitetsprincipen handlar om saklighet och opartiskhet.",
+      "Riksdagen och regeringen omfattas vanligtvis inte av objektivitetsprincipen.",
+      "Polisanställda ska beakta allas likhet inför lagen."
+    ],
+    "answer": "Objektivitetsprincipen blir oviktig i brottsutredningar."
+  },
+  {
+    "id": "2.16",
+    "question": "Vilken offentligrättslig princip aktualiseras främst vid användning av OC-spray i en klunga supportrar?",
+    "options": [
+      "Likabehandlingsprincipen",
+      "Objektivitetsprincipen",
+      "Offentlighetsprincipen",
+      "Proportionalitetsprincipen",
+      "Officialprincipen"
+    ],
+    "answer": "Proportionalitetsprincipen"
+  },
+  {
+    "id": "3.4",
+    "question": "Vilket av de nedanstående påståendena är felaktigt?",
+    "options": [
+      "Skydd mot retroaktiv strafflag får begränsas genom lag av hänsyn till ordning och säkerhet.",
+      "Skydd mot dödsstraff och tortyr kan inte begränsas genom lag.",
+      "Skydd mot kroppsvisitation kan begränsas genom lag.",
+      "Mötes- och demonstrationsfrihet kan begränsas av hänsyn till ordning och säkerhet."
+    ],
+    "answer": "Skydd mot retroaktiv strafflag får begränsas genom lag av hänsyn till ordning och säkerhet."
+  },
+  {
+    "id": "3.5",
+    "question": "Vilket av de nedanstående påståendena är felaktigt?",
+    "options": [
+      "EKMR är svensk grundlag.",
+      "EKMR är ratificerad av samtliga EU-stater.",
+      "Lag får inte meddelas i strid med EKMR.",
+      "Svensk domstol ska beakta Europadomstolens praxis."
+    ],
+    "answer": "EKMR är svensk grundlag."
+  },
+  {
+    "id": "3.6",
+    "question": "Vilken av följande situationer saknar skydd enligt rättighetskatalogen i RF?",
+    "options": [
+      "Anna som kroppsvisiteras av polisen",
+      "Bertil som demonstrerar mot regeringen",
+      "Carolina som diskrimineras av sin arbetsgivare",
+      "Daniel som vill bilda en fotbollsförening"
+    ],
+    "answer": "Carolina som diskrimineras av sin arbetsgivare"
+  },
+  {
+    "id": "3.7",
+    "question": "Vilket av de nedanstående påståendena är felaktigt?",
+    "options": [
+      "Tvång att lämna fingeravtryck omfattas av RF 2 kap 6 §.",
+      "Proportionalitetsprincipen behöver inte beaktas vid inskränkningar i RF 2 kap.",
+      "Enligt RF 2 kap 11 § får inte en domstol inrättas retroaktivt.",
+      "RF 2 kap 20 § anger om rättighet är relativ eller absolut."
+    ],
+    "answer": "Proportionalitetsprincipen behöver inte beaktas vid inskränkningar i RF 2 kap."
+  },
+  {
+    "id": "4.1",
+    "question": "Vilka två rättsliga begrepp delas all egendom in i?",
+    "options": [
+      "Fast egendom och lös egendom",
+      "Rättigheter och skyldigheter",
+      "Immateriell och materiell egendom"
+    ],
+    "answer": "Fast egendom och lös egendom"
+  },
+  {
+    "id": "4.4",
+    "question": "Vilket av dessa påståenden är felaktigt om godtrosförvärv?",
+    "options": [
+      "Godtrosförvärv av stöldgods är inte möjligt.",
+      "Godtrosförvärv av förskingrat gods är inte möjligt.",
+      "Även efter godtrosförvärv kan egendomen återkrävas.",
+      "Lagen gäller inte upphovsrättigheter."
+    ],
+    "answer": "Godtrosförvärv av förskingrat gods är inte möjligt."
+  },
+  {
+    "id": "4.6",
+    "question": "Vad innebär strikt ansvar inom skadeståndsrätten?",
+    "options": [
+      "Att man kan bli ansvarig även utan att ha varit oaktsam",
+      "Att man alltid måste ha orsakat skadan med vilja",
+      "Att skadan måste vara avsiktlig"
+    ],
+    "answer": "Att man kan bli ansvarig även utan att ha varit oaktsam"
+  },
+  {
+    "id": "4.8",
+    "question": "Vad måste du göra om du hittar en mobiltelefon ute?",
+    "options": [
+      "Behålla den i 3 månader innan polisanmälan",
+      "Lämna den till polisen eller underrätta ägaren direkt",
+      "Sälja den om ingen efterlyst den efter en vecka"
+    ],
+    "answer": "Lämna den till polisen eller underrätta ägaren direkt"
+  },
+  {
+    "id": "5.1",
+    "question": "Vad innebär termen rekvisit inom straffrätten?",
+    "options": [
+      "Villkor som måste vara uppfyllda för att en lagregel ska gälla",
+      "Rätt att försvara sig mot brott",
+      "En typ av brottsrubricering"
+    ],
+    "answer": "Villkor som måste vara uppfyllda för att en lagregel ska gälla"
+  },
+  {
+    "id": "5.2",
+    "question": "Vad menas med handlingsrekvisit?",
+    "options": [
+      "Att brottet kräver någon form av handling",
+      "Att handlingen orsakat ekonomisk skada",
+      "Att brottet kräver ett offer"
+    ],
+    "answer": "Att brottet kräver någon form av handling"
+  },
+  {
+    "id": "5.4",
+    "question": "Vad menas med effektbrott?",
+    "options": [
+      "Brott som kräver en viss effekt för att vara straffbara",
+      "Brott som sker utan offer",
+      "Handlingar som saknar straffvärde"
+    ],
+    "answer": "Brott som kräver en viss effekt för att vara straffbara"
+  },
+  {
+    "id": "5.5",
+    "question": "Vad menas med rena handlingsbrott?",
+    "options": [
+      "Brott där effekten inte behöver uppnås",
+      "Brott som kräver dödsfall",
+      "Brott utan uppsåt"
+    ],
+    "answer": "Brott där effekten inte behöver uppnås"
+  },
+  {
+    "id": "5.6",
+    "question": "Vad innebär täckningsprincipen?",
+    "options": [
+      "Att objektiva rekvisit ska täckas av subjektiva rekvisit",
+      "Att alla handlingar ska dokumenteras",
+      "Att domen måste täcka alla bevis"
+    ],
+    "answer": "Att objektiva rekvisit ska täckas av subjektiva rekvisit"
+  },
+  {
+    "id": "5.7",
+    "question": "Vilka tre former delas uppsåt in i?",
+    "options": [
+      "Avsiktsuppsåt, insiktsuppsåt och likgiltighetsuppsåt",
+      "Direkt uppsåt, avsikt, och oavsikt",
+      "Medveten culpa, omedveten culpa, och slarv"
+    ],
+    "answer": "Avsiktsuppsåt, insiktsuppsåt och likgiltighetsuppsåt"
+  },
+  {
+    "id": "5.10",
+    "question": "Vad menas med dubbel straffbarhet?",
+    "options": [
+      "Att brottet ska vara straffbart i både Sverige och gärningslandet",
+      "Att man döms två gånger för samma brott",
+      "Att två gärningsmän måste identifieras"
+    ],
+    "answer": "Att brottet ska vara straffbart i både Sverige och gärningslandet"
+  },
+  {
+    "id": "5.14",
+    "question": "Vilken av följande är en allmän ansvarsfrihetsgrund?",
+    "options": [
+      "Nödvärn",
+      "Tillfällig minnesförlust",
+      "Misstag i bevisföring"
+    ],
+    "answer": "Nödvärn"
+  },
+  {
+    "id": "5.18",
+    "question": "Vilka två former av medverkansbrott finns det?",
+    "options": [
+      "Anstiftan och medhjälp",
+      "Förberedelse och försök",
+      "Straff och ansvar"
+    ],
+    "answer": "Anstiftan och medhjälp"
+  }
+]
