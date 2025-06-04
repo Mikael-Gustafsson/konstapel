@@ -11,6 +11,8 @@ function shuffleArray(array) {
 }
 
 function App() {
+  const [graduationYear, setGraduationYear] = useState('');
+  const [welcomeDone, setWelcomeDone] = useState(false);
   const [selectedChapter, setSelectedChapter] = useState(null);
   const [filteredQuestions, setFilteredQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,6 +22,12 @@ function App() {
   const [quizFinished, setQuizFinished] = useState(false);
 
   const chapters = Array.from(new Set(allQuestions.map((q) => q.id.split('.')[0])));
+
+  const handleWelcomeContinue = () => {
+    if (graduationYear) {
+      setWelcomeDone(true);
+    }
+  };
 
   const startQuiz = (chapter) => {
     const questionsToUse = chapter === 'ALL'
@@ -70,7 +78,36 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100 flex items-center justify-center p-4">
       <div className="bg-white p-6 rounded-xl shadow-xl w-full max-w-xl text-gray-800">
-        {!selectedChapter ? (
+        {!welcomeDone ? (
+          <div className="text-center space-y-4">
+            <h1 className="text-3xl font-bold">Välkommen!</h1>
+            <p>Vad kul att du ska utbilda dig till polis.</p>
+            <div>
+              <label htmlFor="year" className="block mb-1">Välj examensår</label>
+              <select
+                id="year"
+                value={graduationYear}
+                onChange={(e) => setGraduationYear(e.target.value)}
+                className="border rounded p-2 w-full"
+              >
+                <option value="">Välj år...</option>
+                {Array.from({ length: 7 }).map((_, i) => {
+                  const year = 2024 + i;
+                  return (
+                    <option key={year} value={year}>{year}</option>
+                  );
+                })}
+              </select>
+            </div>
+            <button
+              onClick={handleWelcomeContinue}
+              disabled={!graduationYear}
+              className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 disabled:opacity-50"
+            >
+              Fortsätt
+            </button>
+          </div>
+        ) : !selectedChapter ? (
           <div className="text-center">
             <h2 className="text-2xl font-semibold mb-4">Välj kapitel 👮 🚓</h2>
             <div className="grid grid-cols-2 gap-4 mb-6">
