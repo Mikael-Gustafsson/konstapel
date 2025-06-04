@@ -1,35 +1,28 @@
-/* eslint-disable no-unused-vars */
-import { useRef, useState } from 'react';
-import { motion as Motion } from 'framer-motion';
-import { BadgeCheck, Car, Shield } from 'lucide-react';
+import { useState } from 'react';
 
 function IconDragGame({ userName }) {
   const items = [
-    { id: 'badge', label: 'Polism\u00e4rke', Icon: BadgeCheck },
-    { id: 'car', label: 'Polisbil', Icon: Car },
-    { id: 'shield', label: 'Skydd', Icon: Shield },
+    { id: 'badge', label: 'Polism\u00e4rke', icon: '\uD83C\uDFC5' },
+    { id: 'car', label: 'Polisbil', icon: '\uD83D\uDE93' },
+    { id: 'shield', label: 'Skydd', icon: '\uD83D\uDEE1\uFE0F' },
   ];
 
   const [placed, setPlaced] = useState({});
-  const refs = {
-    badge: useRef(null),
-    car: useRef(null),
-    shield: useRef(null),
+
+  const handleDragStart = (event, id) => {
+    event.dataTransfer.setData('text/plain', id);
   };
 
-  const handleDragEnd = (id, event) => {
-    const target = refs[id].current;
-    if (!target) return;
-    const iconRect = event.target.getBoundingClientRect();
-    const targetRect = target.getBoundingClientRect();
-    if (
-      iconRect.left > targetRect.left &&
-      iconRect.right < targetRect.right &&
-      iconRect.top > targetRect.top &&
-      iconRect.bottom < targetRect.bottom
-    ) {
+  const handleDrop = (event, id) => {
+    event.preventDefault();
+    const draggedId = event.dataTransfer.getData('text/plain');
+    if (draggedId === id) {
       setPlaced((p) => ({ ...p, [id]: true }));
     }
+  };
+
+  const allowDrop = (event) => {
+    event.preventDefault();
   };
 
   const allDone = items.every((i) => placed[i.id]);
@@ -46,24 +39,25 @@ function IconDragGame({ userName }) {
         {items.map(({ id, label }) => (
           <div
             key={id}
-            ref={refs[id]}
+            onDragOver={allowDrop}
+            onDrop={(e) => handleDrop(e, id)}
             className="w-24 h-24 border rounded flex items-center justify-center"
           >
             {placed[id] ? label : '?'}
           </div>
         ))}
       </div>
-      <div className="flex justify-around mt-6">
-        {items.map(({ id, Icon: IconComponent }) => (
+      <div className="flex justify-around mt-6 text-3xl">
+        {items.map(({ id, icon }) => (
           !placed[id] && (
-            <Motion.div
+            <div
               key={id}
-              drag
-              onDragEnd={(e) => handleDragEnd(id, e)}
+              draggable
+              onDragStart={(e) => handleDragStart(e, id)}
               className="cursor-grab"
             >
-              <IconComponent size={40} />
-            </Motion.div>
+              {icon}
+            </div>
           )
         ))}
       </div>
