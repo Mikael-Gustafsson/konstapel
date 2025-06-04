@@ -11,6 +11,8 @@ export function shuffleArray(array) {
 }
 
 function App() {
+  const [graduationYear, setGraduationYear] = useState('');
+  const [yearSubmitted, setYearSubmitted] = useState(false);
   const [selectedChapter, setSelectedChapter] = useState(null);
   const [filteredQuestions, setFilteredQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,6 +22,15 @@ function App() {
   const [quizFinished, setQuizFinished] = useState(false);
 
   const chapters = Array.from(new Set(allQuestions.map((q) => q.id.split('.')[0])));
+  const currentYear = new Date().getFullYear();
+  const years = Array.from({ length: 8 }, (_, i) => currentYear + i);
+
+  const handleYearSubmit = (e) => {
+    e.preventDefault();
+    if (graduationYear) {
+      setYearSubmitted(true);
+    }
+  };
 
   const startQuiz = (chapter) => {
     const questionsToUse = chapter === 'ALL'
@@ -70,7 +81,26 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100 flex items-center justify-center p-4">
       <div className="bg-white p-6 rounded-xl shadow-xl w-full max-w-xl text-gray-800">
-        {!selectedChapter ? (
+        {!yearSubmitted ? (
+          <form onSubmit={handleYearSubmit} className="text-center space-y-4">
+            <h2 className="text-2xl font-semibold">Hej, vad kul att du ska bli polis!</h2>
+            <p className="text-lg">Vänligen fyll i när du tar examen</p>
+            <select
+              value={graduationYear}
+              onChange={(e) => setGraduationYear(e.target.value)}
+              required
+              className="w-full border border-gray-300 rounded p-2"
+            >
+              <option value="">Välj år</option>
+              {years.map((y) => (
+                <option key={y} value={y}>{y}</option>
+              ))}
+            </select>
+            <button type="submit" className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition">
+              Fortsätt
+            </button>
+          </form>
+        ) : !selectedChapter ? (
           <div className="text-center">
             <h2 className="text-2xl font-semibold mb-4">Välj kapitel 👮 🚓</h2>
             <div className="grid grid-cols-2 gap-4 mb-6">
